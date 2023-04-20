@@ -21,8 +21,11 @@
 }
 
 @media (max-width: 768px) {
-  .introduction { text-align: center;
-}
+
+  .introduction { 
+    text-align: center;
+  }
+  
 }
 
 .main-section {
