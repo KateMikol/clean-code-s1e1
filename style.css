@@ -18,6 +18,9 @@
 
 .introduction .more-info {
   font-family: fantasy, cursive;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
 }
 
 @media (max-width: 768px) {
@@ -25,7 +28,7 @@
   .introduction { 
     text-align: center;
   }
-  
+
 }
 
 .main-section {
