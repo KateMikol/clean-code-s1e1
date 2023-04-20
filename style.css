@@ -5,18 +5,18 @@
   font-family: Lato, sans-serif;
 }
 
-.introduction {
+.header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.introduction .introduction-img {
+.header .header__img {
   width: 100%;
 }
 
-.introduction .more-info {
+.header .header__more-info {
   font-family: fantasy, cursive;
   font-size: 16px;
   margin: 0;
@@ -25,7 +25,7 @@
 
 @media (max-width: 768px) {
 
-  .introduction { 
+  .header { 
     text-align: center;
   }
 
@@ -43,17 +43,17 @@
   flex-grow: 1;
 }
 
-.task-wrapper {
+.add-item-section__task-wrapper {
   display: flex;
 }
 
-.list-of-tasks {
+.todo-section__list-of-tasks {
   margin: 0;
   padding: 0px;
 }
 
-.list-item,
-.subtitle {
+.list-of-tasks__item,
+.todo-section__subtitle {
   list-style: none;
 }
 
@@ -77,8 +77,8 @@
 }
 
 /* Heading */
-.subtitle,
-.new-task-label {
+.todo-section__subtitle,
+.add-item-section__new-task {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -106,7 +106,7 @@
 }
 
 /* New Task */
-.new-task-label {
+.add-item-section__new-task {
   display: block;
   margin: 0 0 20px;
 }
@@ -116,7 +116,7 @@
 }
 
 /* Task list */
-.list-item {
+.list-of-tasks__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -125,28 +125,28 @@
   align-items: center;
 }
 
-.list-item > .input-checkbox {
+.list-of-tasks__item > .input-checkbox {
   margin: 0 10px;
 }
 
-.list-item > .label {
+.list-of-tasks__item > .label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.list-item > .input-text {
+.list-of-tasks__item > .input-text {
   width: 226px;
 }
 
-.button.delete .remove-img {
+.button.delete .button__remove-img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.button.delete .remove-img:hover {
+.button.delete .button__remove-img:hover {
   transform: rotateZ(0);
 }
 
@@ -157,15 +157,15 @@
 }
 
 /* Edit Task */
-.list-of-tasks .list-item .input-text{
+.todo-section__list-of-tasks .list-of-tasks__item .input-text{
   display: none;
 }
 
-.list-of-tasks .edit-mode .input-text{
+.todo-section__list-of-tasks .edit-mode .input-text{
   display: inline-block;
   width: 224px;
 }
 
-.list-of-tasks .edit-mode .label {
+.todo-section__list-of-tasks .edit-mode .label {
   display: none;
 }
